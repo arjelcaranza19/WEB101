@@ -127,13 +127,6 @@ body {
     width: fit-content;
 }
 
-.profile-info, 
-.profile-info p, 
-.profile-info li, 
-.profile-info b {
-    color: black;
-}
-
 .profile-pic img {
     width: 200px;
     height: 240px;

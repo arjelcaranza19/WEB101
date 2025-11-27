@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #FCE8C5; /* Jollibee Cream */
+    background: #FCE8C5; 
 }
 
 .container {
@@ -10,7 +10,7 @@ body {
 
 .sidebar {
     width: 280px;
-    background: #D6001C; /* Jollibee Red */
+    background: #D6001C; 
     height: 100vh;
     padding: 20px;
     box-shadow: 3px 0 10px rgba(0,0,0,0.2);
@@ -21,13 +21,13 @@ body {
     margin-bottom: 20px;
     font-size: 28px;
     font-weight: bold;
-    color: #F7D117; /* Yellow */
+    color: #F7D117;
 }
 
 .section-title {
     padding: 10px;
-    background: #F7D117; /* Yellow */
-    color: #000; /* Black text */
+    background: #F7D117;
+    color: #000; 
     border-radius: 8px;
     font-weight: bold;
     margin-top: 20px;
@@ -49,7 +49,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 8px;
     cursor: pointer;
-    color: black; /* Black text */
+    color: black; 
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
@@ -72,7 +72,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 8px;
     text-decoration: none;
-    color: black; /* Black text */
+    color: black; 
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 

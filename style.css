@@ -13,7 +13,6 @@ body {
     background: #D6001C; /* Jollibee Red */
     height: 100vh;
     padding: 20px;
-    color: white;
     box-shadow: 3px 0 10px rgba(0,0,0,0.2);
 }
 
@@ -28,7 +27,7 @@ body {
 .section-title {
     padding: 10px;
     background: #F7D117; /* Yellow */
-    color: #000;
+    color: #000; /* Black text */
     border-radius: 8px;
     font-weight: bold;
     margin-top: 20px;
@@ -42,19 +41,50 @@ body {
 
 .menu li {
     margin: 10px 0;
+}
+
+.box-item {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    color: black; /* Black text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.box-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background: #ffe2df;
+}
+
+.box-item:active {
+    transform: translateY(0);
+    background: #ffb7b0;
+}
+
+.profile-box-item {
     display: flex;
     align-items: center;
-}
-
-.menu li a {
+    padding: 10px 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     text-decoration: none;
-    color: white;
-    font-size: 16px;
+    color: black; /* Black text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
-.menu li a:hover {
-    color: #F7D117;
-    font-weight: bold;
+.profile-box-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background: #ffe2df;
+}
+
+.profile-box-item:active {
+    transform: translateY(0);
+    background: #ffb7b0;
 }
 
 .dot {
@@ -76,6 +106,8 @@ body {
     border-left: 10px solid #D6001C;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .profile-container {
@@ -95,6 +127,13 @@ body {
     width: fit-content;
 }
 
+.profile-info, 
+.profile-info p, 
+.profile-info li, 
+.profile-info b {
+    color: black;
+}
+
 .profile-pic img {
     width: 200px;
     height: 240px;
@@ -107,13 +146,13 @@ body {
     display: none;
     opacity: 0;
     transform: translateY(10px);
-    transition: opacity .4s ease, transform .4s ease;
 }
 
 .profile-box:target {
     display: block;
     opacity: 1;
     transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 html {
